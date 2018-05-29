@@ -1,7 +1,5 @@
-endpoint: https://eu1.prisma.sh/christian-nwamba-fd2dcf/hackernews-node/dev
+endpoint: https://eu1.prisma.sh/christian-nwamba-fd2dcf/hackernews-node2/dev
 datamodel: datamodel.graphql
 hooks:
   post-deploy:
-    - echo "Deployment finished"
-    - graphql get-schema --project prisma
-    - graphql prepare
+    - graphql get-schema --project database
